@@ -1,6 +1,5 @@
 body {
-	/*font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";*/
-	font-family: Courier, "Lucida Console", monospace;
+	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	font-size: 1em;
 	color: white;
 	background-color: darkslategray
@@ -17,6 +16,7 @@ h2 {
 }
 
 p {
-	/*font-size: 1em;*/
+	font-family: Verdana, Arial, Helvetica, sans-serif
+	font-size: 1em;
 	text-align: justify;
 }
