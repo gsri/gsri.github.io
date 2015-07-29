@@ -1,5 +1,6 @@
 body {
-	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	/*font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";*/
+	font-family: "Courier New", Courier, monospace;
 	font-size: 1em;
 	color: white;
 	background-color: darkslategray
@@ -17,7 +18,7 @@ h2 {
 }
 
 p {
-	font-family: monospace
+	/*font-family: "Courier New" Courier monospace;*/
 	font-size: 1.5em;
 	text-align: justify;
 }
