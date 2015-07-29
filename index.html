@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>APJ Abdul Kalam</title>
   <link rel="stylesheet" href="jquery-ui.css">
   <script src="jquery-1.11.3.js"></script>
@@ -15,7 +15,7 @@
     height: auto;
   }
   </style>
-  <script>
+  <!--<script>
       
       
       $(function() {
@@ -40,7 +40,7 @@
       }
     });
   });
-  </script>
+  </script>-->
 </head>
 <body>
     <img src="apj.jpg" alt="APJ" width="200" height="200">
@@ -95,7 +95,32 @@
     </div>
   </div>
 </div>
- 
+ <script>
+      
+      
+      $(function() {
+          $( "#accordion" ).accordion({
+              active: false,
+              collapsible: true,
+              heightStyle: "content"
+          });
+      });
+      
+  /*$(function() {
+    $( "#accordion" ).accordion({
+        heightStyle: "content"      
+    });
+  });*/
+   $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+  </script>
  
 </body>
 </html>
