@@ -5,11 +5,11 @@ body {
 	background-color: darkslategray
 }
 
-img {    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
 }
 
 h2 {text-align: center}
