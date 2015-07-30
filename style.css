@@ -16,6 +16,10 @@ h2 {text-align: center}
 
 p {
     	font-size: 19px;
+<<<<<<< HEAD
+=======
+    	font-weight: 500;
+>>>>>>> e1d822f40e7cc60619f7bf9cf1472030a95b9f7e
     	text-align: justify;
     	line-height: 1.4em;
 }
