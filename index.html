@@ -1,101 +1,109 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>APJ Abdul Kalam</title>
-  <link rel="stylesheet" href="jquery-ui.css">
-  <script src="jquery-1.11.3.js"></script>
-  <script src="jquery-ui.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  #accordion-resizer {
-    padding: 10px;
-    width: auto;
-    height: auto;
-  }
-  </style>
-  <script>
-      
-      
-      $(function() {
-          $( "#accordion" ).accordion({
-              active: false,
-              collapsible: true,
-              heightStyle: "content"
-          });
-      });
-      
-  /*$(function() {
-    $( "#accordion" ).accordion({
-        heightStyle: "content"      
-    });
-  });*/
-   $(function() {
-    $( "#accordion-resizer" ).resizable({
-      minHeight: 140,
-      minWidth: 200,
-      resize: function() {
-        $( "#accordion" ).accordion( "refresh" );
-      }
-    });
-  });
-  </script>
-</head>
-<body>
-    <img src="apj.jpg" alt="APJ">
-    <h2>Dr. APJ Abdul Kalam</h2>
-    <h3 class="docs">Excerpts from Wings of Fire: An Autobiography</h3>
-<!--    <h3 class="docs">Resize the outer container:</h3>-->
- 
-<div id="accordion-resizer" class="ui-widget-content">
-  <div id="accordion">
-    <h3>Excerpt 1</h3>
-    <div>
-      <p>"Towards the end of my visit, I went to the Wallops Flight Facility at Wallops Island in East Coast, Virginia. This place was the base for NASA’s sounding rocket programme. Here, I saw a painting prominently displayed in the reception lobby. It depicted a battle scene with a few rockets flying in the background. A painting with this theme should be the most commonplace thing at a Flight Facility, but the painting caught my eye because the soldiers on the side launching the rockets were not white, but dark-skinned, with the racial features of people found in South Asia. One day, my curiosity got the better of me, drawing me towards the painting. It turned out to be Tipu Sultan’s army fighting the British. The painting depicted a fact forgotten in Tipu’s own country but commemorated here on the other side of the planet. I was happy to see an Indian glorified by NASA as a hero of warfare rocketry."</p>
-    </div>
-    <h3>Excerpt 2</h3>
-    <div>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>APJ Abdul Kalam</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="jquery-ui.css">
+        <script src="jquery-1.11.3.js"></script>
+        <script src="jquery-ui.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
+        <style>            
+            #accordion-resizer {
+                padding: 10px;
+                width: auto;
+                height: auto;
+            }
+        </style>
+        
+        <script>
+            $(function() {
+                $( "#accordion" ).accordion({
+                    active: false,
+                    collapsible: true,
+                    heightStyle: "content"
+                });
+            });
+            
+            $(function() {
+                $( "#accordion-resizer" ).resizable({
+                    minHeight: 140,
+                    minWidth: 200,
+                    resize: function() {
+                        $( "#accordion" ).accordion( "refresh" );
+                    }
+                });
+            });
+        </script>
+    
+    </head>
+    
+    <body>
+        <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank"><img src="apj.jpg" alt="Dr. Kalam"></a>
+        <h2>Dr. APJ Abdul Kalam</h2>
+        <h3>Excerpts from Wings of Fire: An Autobiography</h3>
+        
+        <div id="accordion-resizer" class="ui-widget-content">
+            <div id="accordion">
+                
+                <h3>1. Tipu Sultan at NASA</h3>
+                <div>
+                    <p>"Towards the end of my visit, I went to the Wallops Flight Facility at Wallops Island in East Coast, Virginia. This place was the base for NASA’s sounding rocket programme. Here, I saw a painting prominently displayed in the reception lobby. It depicted a battle scene with a few rockets flying in the background. A painting with this theme should be the most commonplace thing at a Flight Facility, but the painting caught my eye because the soldiers on the side launching the rockets were not white, but dark-skinned, with the racial features of people found in South Asia. One day, my curiosity got the better of me, drawing me towards the painting. It turned out to be Tipu Sultan’s army fighting the British. The painting depicted a fact forgotten in Tipu’s own country but commemorated here on the other side of the planet. I was happy to see an Indian glorified by NASA as a hero of warfare rocketry."</p>
+                </div>
+                
+                <h3>2. Kinds of Rockets</h3>
+                <div>
       <p>"What is it that distinguishes a sounding rocket from a Satellite Launch Vehicle (SLV) and from a missile? In fact, they are three different kinds of rockets. Sounding rockets are normally used for probing the near-earth environment, including the upper regions of the atmosphere. While they can carry a variety of scientific payloads to a range of altitudes, they cannot impart the final velocity needed to orbit the payload. On the other hand, a launch vehicle is designed to inject into orbit a technological payload or satellite. The final stage of a launch vehicle provides the necessary velocity for a satellite to enter an orbit. This is a complex operation requiring on-board guidance and control systems. A missile, though belonging to the same family, is a still more complex system. In addition to the large terminal velocity and onboard guidance and control, it must have the capability to home onto targets. When the targets are fast-moving and capable of manoeuvring, a missile is also required to carryout target-tracking functions."</p>
-    </div>
-    <h3>Excerpt 3</h3>
-    <div>
-      <p>"The development of Indian rockets in the twentieth century can be seen as a revival of the eighteenth century dream of Tipu Sultan. When Tipu Sultan was killed, the British captured more than 700 rockets and subsystems of 900 rockets in the battle of Turukhanahally in 1799. His army had 27 brigades, called Kushoons, and each brigade had a company of rocket men, called Jourks. These rockets had been taken to England by William Congreve and were subjected by the British to what we call ‘reverse engineering’ today. There were, of course, no GATT, IPR Act, or patent regime. With the death of Tipu, Indian rocketry also met its demise — at least for 150 years."</p>      
-    </div>
-    <h3>Excerpt 4</h3>
-    <div>
-      <p>"I often read Khalil Gibran, and always find his words full of wisdom. “Bread baked without love is a bitter bread that feeds but half a man’s hunger,”—those who cannot work with their hearts achieve but a hollow, half-hearted success that breeds bitterness all around. If you are a writer who would secretly prefer to be a lawyer or a doctor, your written words will feed but half the hunger of your readers; if you are a teacher who would rather be a businessman, your instructions will meet but half the need for knowledge of your students; if you are a scientist who hates science, your performance will satisfy but half the needs of your mission. The personal unhappiness and failure to achieve results that comes from being a round peg in a square hole is not, by any means, new. But there are exceptions to this like Prof. Oda and Sudhakar, who bring to their work a personal touch of magic based upon their individual character, personality, inner motives, and perhaps the dreams crystallized within their hearts. They become so emotionally involved with their work that any dilution of the success of their effort fills them with grief."</p>
-    </div>
-      <h3>Excerpt 5</h3>
-    <div>
-      <p>"One day, when I was working on the integration for Prof. Oda’s payload with my timer devices, he insisted on using the timers he had brought from Japan. To me they looked flimsy, but Prof. Oda stuck to his stand that the Indian timers be replaced by the Japanese ones. I yielded to his suggestion and replaced the timers. The rocket took off elegantly and attained the intended altitude. But the telemetry signal reported mission failure on account of timer malfunction. Prof. Oda was so upset that tears welled up in his eyes. I was stunned by the emotional intensity of Prof. Oda’s response. He had clearly put his heart and soul into his work."</p>
-    </div>
-      <h3>Excerpt 6</h3>
-    <div>
-      <p>"Sudhakar was my colleague in the Payload Preparation Laboratory. As part of the pre-launch schedule, we were filling and remotely pressing the hazardous sodium and thermite mix. As usual, it was a hot and humid day at Thumba. After the sixth such operation, Sudhakar and I went into the payload room to confirm the proper filling of the mix. Suddenly, a drop of sweat from his forehead fell onto the sodium, and before we knew what was happening, there was a violent explosion which shook the room. For a few paralysed seconds, I did not know what to do. The fire was spreading, and water would not extinguish the sodium fire. Trapped in this inferno, Sudhakar, however, did not lose his presence of mind. He broke the glass window with his bare hands and literally threw me out to safety before jumping out himself. I touched Sudhakar’s bleeding hands in gratitude, he was smiling through his pain. Sudhakar spent many weeks in the hospital recuperating from the severe burns he had received."</p>
-    </div>
-      <h3>Excerpt 7</h3>
-    <div>
-      <p>"I had the privilege of spending a great deal of time with Prof. Dhawan. He could hold the listener enthralled because of the logical, intellectual acumen he could bring to bear on his analysis of any subject. He had an unusual combination of degrees — a B.Sc. in Mathematics and Physics, an M.A. in English Literature, B.E. in Mechanical Engineering, M.S. in Aeronautical Engineering followed by a Ph.D. in Aeronautics and Mathematics from the California Institute of Technology (Caltech) in USA."</p>
-    </div>
-      <h3>Excerpt 8</h3>
-    <div>
-      <p>“Total commitment is not just hard work, it is total involvement. Building a rock wall is back-breaking work. There are some people who build rock walls all their lives. And when they die, there are miles of walls, mute testimonials to how hard those people had worked.”</p>
-        <p>"He continued, “But there are other men who while placing one rock on top of another have a vision in their minds, a goal. It may be a terrace with roses climbing over the rock walls and chairs set out for lazy summer days. Or the rock wall may enclose an apple orchard or mark a boundary. When they finish, they have more than a wall. It is the goal that makes the difference. Do not make rocketry your profession, your livelihood — make it your religion, your mission.” Did I see something of Prof. Vikram Sarabhai in von Braun? It made me happy to think so."</p>
-    </div>
-      <h3>Excerpt 9</h3>
-    <div>
-      <p>"With three deaths in the family in as many successive years, I needed total commitment to my work in order to keep performing. I wanted to throw all my being into the creation of the SLV. I felt as if I had discovered the path I was meant to follow, God’s mission for me and my purpose on His earth. During this period, it was as though I had pushed a hold button — no badminton in the evenings, no more weekends or holidays, no family, no relations, not even any friends outside the SLV circle."</p>
-        <p>"To succeed in your mission, you must have single-minded devotion to your goal. Individuals like myself are often called ‘workaholics’. I question this term because that implies a pathological condition or an illness. If I do that which I desire more than anything else in the world and which makes me happy, such work can never be an aberration."</p>
-    </div>
-      <h3>Excerpt 10</h3>
-    <div>
-      <p>"Total commitment is a crucial quality for those who want to reach the very top of their profession. The desire to work at optimum capacity leaves hardly any room for anything else. I have had people with me who would scoff at the 40-hours-a-week job they were being paid for. I have known others who used to work 60, 80 and even 100 hours a week because they found their work exciting and rewarding. Total commitment is the common denominator among all successful men and women. Are you able to manage the stresses you encounter in your life? The difference between an energetic and a confused person is the difference in the way their minds handle their experiences. Man needs his difficulties because they are necessary to enjoy success. All of us carry some sort of a super-intelligence within us. Let it be stimulated to enable us to examine our deepest thoughts, desires, and beliefs."</p>
-        <p>"Once you have done this — charged yourself, as it were, with your commitment to your work — you also need good health and boundless energy. Climbing to the top demands strength, whether to the top of Mount Everest or to the top of your career. People are born with different energy reserves and the one who tires first and burns out easily will do well to reorganize his or her life at the earliest."</p>
-    </div>
-  </div>
-</div>
- 
- 
+                </div>
+                
+                <h3>3. Tipu's Rockets</h3>
+                <div>
+                    <p>"The development of Indian rockets in the twentieth century can be seen as a revival of the eighteenth century dream of Tipu Sultan. When Tipu Sultan was killed, the British captured more than 700 rockets and subsystems of 900 rockets in the battle of Turukhanahally in 1799. His army had 27 brigades, called Kushoons, and each brigade had a company of rocket men, called Jourks. These rockets had been taken to England by William Congreve and were subjected by the British to what we call ‘reverse engineering’ today. There were, of course, no GATT, IPR Act, or patent regime. With the death of Tipu, Indian rocketry also met its demise — at least for 150 years."</p>
+                </div>
+                
+                <h3>4. Half-Hearted Success</h3>
+                <div>
+                    <p>"I often read Khalil Gibran, and always find his words full of wisdom. “Bread baked without love is a bitter bread that feeds but half a man’s hunger,”—those who cannot work with their hearts achieve but a hollow, half-hearted success that breeds bitterness all around. If you are a writer who would secretly prefer to be a lawyer or a doctor, your written words will feed but half the hunger of your readers; if you are a teacher who would rather be a businessman, your instructions will meet but half the need for knowledge of your students; if you are a scientist who hates science, your performance will satisfy but half the needs of your mission. The personal unhappiness and failure to achieve results that comes from being a round peg in a square hole is not, by any means, new. But there are exceptions to this like Prof. Oda and Sudhakar, who bring to their work a personal touch of magic based upon their individual character, personality, inner motives, and perhaps the dreams crystallized within their hearts. They become so emotionally involved with their work that any dilution of the success of their effort fills them with grief."</p>
+                </div>
+                
+                <h3>5. Heart and Soul</h3>
+                <div>
+                    <p>"One day, when I was working on the integration for Prof. Oda’s payload with my timer devices, he insisted on using the timers he had brought from Japan. To me they looked flimsy, but Prof. Oda stuck to his stand that the Indian timers be replaced by the Japanese ones. I yielded to his suggestion and replaced the timers. The rocket took off elegantly and attained the intended altitude. But the telemetry signal reported mission failure on account of timer malfunction. Prof. Oda was so upset that tears welled up in his eyes. I was stunned by the emotional intensity of Prof. Oda’s response. He had clearly put his heart and soul into his work."</p>
+                </div>
+                
+                <h3>6. Presence of Mind</h3>
+                <div>
+                    <p>"Sudhakar was my colleague in the Payload Preparation Laboratory. As part of the pre-launch schedule, we were filling and remotely pressing the hazardous sodium and thermite mix. As usual, it was a hot and humid day at Thumba. After the sixth such operation, Sudhakar and I went into the payload room to confirm the proper filling of the mix. Suddenly, a drop of sweat from his forehead fell onto the sodium, and before we knew what was happening, there was a violent explosion which shook the room. For a few paralysed seconds, I did not know what to do. The fire was spreading, and water would not extinguish the sodium fire. Trapped in this inferno, Sudhakar, however, did not lose his presence of mind. He broke the glass window with his bare hands and literally threw me out to safety before jumping out himself. I touched Sudhakar’s bleeding hands in gratitude, he was smiling through his pain. Sudhakar spent many weeks in the hospital recuperating from the severe burns he had received."</p>
+                </div>
+                
+                <h3>7. Unusual Degrees</h3>
+                <div>
+                    <p>"I had the privilege of spending a great deal of time with Prof. Dhawan. He could hold the listener enthralled because of the logical, intellectual acumen he could bring to bear on his analysis of any subject. He had an unusual combination of degrees — a B.Sc. in Mathematics and Physics, an M.A. in English Literature, B.E. in Mechanical Engineering, M.S. in Aeronautical Engineering followed by a Ph.D. in Aeronautics and Mathematics from the California Institute of Technology (Caltech) in USA."</p>
+                </div>
+                
+                <h3>8. Total Commitment</h3>
+                <div>
+                    <p>“Total commitment is not just hard work, it is total involvement. Building a rock wall is back-breaking work. There are some people who build rock walls all their lives. And when they die, there are miles of walls, mute testimonials to how hard those people had worked.”</p>
+                    <p>"He continued, “But there are other men who while placing one rock on top of another have a vision in their minds, a goal. It may be a terrace with roses climbing over the rock walls and chairs set out for lazy summer days. Or the rock wall may enclose an apple orchard or mark a boundary. When they finish, they have more than a wall. It is the goal that makes the difference. Do not make rocketry your profession, your livelihood — make it your religion, your mission.” Did I see something of Prof. Vikram Sarabhai in von Braun? It made me happy to think so."</p>
+                </div>
+                
+                <h3>9. Single-Minded Devotion</h3>
+                <div>
+                    <p>"With three deaths in the family in as many successive years, I needed total commitment to my work in order to keep performing. I wanted to throw all my being into the creation of the SLV. I felt as if I had discovered the path I was meant to follow, God’s mission for me and my purpose on His earth. During this period, it was as though I had pushed a hold button — no badminton in the evenings, no more weekends or holidays, no family, no relations, not even any friends outside the SLV circle."</p>
+                    <p>"To succeed in your mission, you must have single-minded devotion to your goal. Individuals like myself are often called ‘workaholics’. I question this term because that implies a pathological condition or an illness. If I do that which I desire more than anything else in the world and which makes me happy, such work can never be an aberration."</p>
+                </div>
+                
+                <h3>10. Common Denominator</h3>
+                <div>
+                    <p>"Total commitment is a crucial quality for those who want to reach the very top of their profession. The desire to work at optimum capacity leaves hardly any room for anything else. I have had people with me who would scoff at the 40-hours-a-week job they were being paid for. I have known others who used to work 60, 80 and even 100 hours a week because they found their work exciting and rewarding. Total commitment is the common denominator among all successful men and women. Are you able to manage the stresses you encounter in your life? The difference between an energetic and a confused person is the difference in the way their minds handle their experiences. Man needs his difficulties because they are necessary to enjoy success. All of us carry some sort of a super-intelligence within us. Let it be stimulated to enable us to examine our deepest thoughts, desires, and beliefs."</p>
+                    <p>"Once you have done this — charged yourself, as it were, with your commitment to your work — you also need good health and boundless energy. Climbing to the top demands strength, whether to the top of Mount Everest or to the top of your career. People are born with different energy reserves and the one who tires first and burns out easily will do well to reorganize his or her life at the earliest."</p>
+                </div>
+            </div>
+        </div>
+  
 </body>
+    
 </html>
