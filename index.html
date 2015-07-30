@@ -7,8 +7,9 @@
         <title>APJ Abdul Kalam</title>
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="jquery-ui.css">
-        <script src="jquery-1.11.3.js"></script>
-        <script src="jquery-ui.js"></script>
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="jquery-ui.js"></script>
+        <script type="text/javascript" src="alphabet.js"></script>
         <link rel="stylesheet" href="style.css">
         
         <style>            
@@ -42,7 +43,7 @@
     </head>
     
     <body>
-        <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank"><img src="apj.jpg" alt="Dr. Kalam"></a>
+        <img src="apj.jpg" alt="Dr. Kalam">
         <h2>Dr. APJ Abdul Kalam</h2>
         <h3>Excerpts from Wings of Fire: An Autobiography</h3>
         
@@ -103,6 +104,29 @@
                 </div>
             </div>
         </div>
+    
+    <canvas id="myCanvas"></canvas>
+    <script type="text/javascript" src="bubbles.js"></script>
+    
+    <script>
+        var red = [0, 100, 63];
+        var orange = [40, 100, 60];
+        var green = [75, 100, 40];
+        var blue = [196, 77, 55];
+        var purple = [280, 50, 60];
+        
+        var myName = "Srisaila";
+        var letterColors = [red, orange, green, blue, purple]
+        if (10 < 3){
+            bubbleShape = "square";
+        }
+        else {
+            bubbleShape = "circle";
+        }
+        
+        drawName(myName, letterColors);
+        bounceBubbles();
+    </script>
   
 </body>
     
